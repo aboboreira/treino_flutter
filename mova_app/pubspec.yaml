@@ -34,6 +34,20 @@ dependencies:
   percent_indicator: ^2.1.0
   datetime_picker_formfield: ^0.4.3
   flutter_datetime_picker: 1.2.5
+  camera: ^0.5.6+1
+  image_picker: ^0.6.1+10
+  font_awesome_flutter: ^8.5.0
+  flutter_svg: ^0.14.3
+  intro_slider: ^2.2.8
+  carousel_slider: ^1.3.0
+  carousel_pro: ^1.0.0
+  fl_chart: ^0.2.0
+  pie_chart: ^3.1.1
+  flutter_circular_chart: ^0.1.0
+  charts_flutter: ^0.8.1
+  flutter_charts: ^0.1.10
+  dependencies:
+
 
 dev_dependencies:
   flutter_test:
@@ -61,15 +75,19 @@ flutter_icons:
 # The following section is specific to Flutter.
 flutter:
 
+
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
   assets:
-      - assets/images/wall4.png
-      - assets/images/logo_principal.png
-      - assets/images/frame.png
-      - assets/images/mova_icon.jpg
+    - assets/images/wall4.png
+    - assets/images/logo_principal.png
+    - assets/images/frame.png
+    - assets/images/mova_icon.jpg
+
+
 
 
 
@@ -78,8 +96,6 @@ fonts:
   - family: Montserrat
     fonts:
       - asset: fonts/Montserrat-Regular.ttf
-
-
 
 
 

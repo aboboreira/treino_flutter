@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'form_cadastro.dart';
+import 'package:mova_ap/cadastro/form_cadastro.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:flutter/services.dart';
 
@@ -103,7 +103,7 @@ appBar: AppBar(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.all(50),
+                        padding: const EdgeInsets.all(50.0),
                         child: new Container(
                           //width: 128.0/MediaQuery.of(context).devicePixelRatio,
                           // height: 86.0/MediaQuery.of(context).devicePixelRatio,
@@ -122,7 +122,7 @@ appBar: AppBar(
 
 
                       Padding(
-                        padding: const EdgeInsets.only(top: 50),
+                        padding: const EdgeInsets.only(top: 50.0),
                         child: new Container(
                           //width: 128.0/MediaQuery.of(context).devicePixelRatio,
                           // height: 86.0/MediaQuery.of(context).devicePixelRatio,
@@ -213,13 +213,13 @@ appBar: AppBar(
         builder: (BuildContext context) {
           //padding: const EdgeInsets.symmetric(horizontal:18 ),
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18),
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 20),
+                  padding: const EdgeInsets.only(top: 20.0),
                   //alinhar no centro
                   child: Text(
                     'Ótimo, vamos criar sua conta!',

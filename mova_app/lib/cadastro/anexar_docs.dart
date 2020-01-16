@@ -13,6 +13,8 @@ import 'package:intl/intl.dart'; //datefrmat
 import 'package:flutter/services.dart';
 import 'package:quiver/async.dart';
 
+import 'cadastro_salvo.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -372,11 +374,12 @@ class _AnexoDocState extends State {
                           child: RaisedButton(
                             //onPressed: () => { print("pressionei o botão"), },
                             onPressed: () {
-                              /* Navigator.push(
+
+                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Anexo()),
-                              );*/
+                                    builder: (context) => CadSalvo()),
+                              );
                             },
 
                             shape: new RoundedRectangleBorder(

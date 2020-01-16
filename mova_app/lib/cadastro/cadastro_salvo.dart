@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mova_ap/dash/dash_investidor.dart';
 //import 'form_codigo.dart';
 import 'anexar_docs.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -142,11 +143,11 @@ class _CadSalvoState extends State<CadSalvo> {
                           child: RaisedButton(
                             //onPressed: () => { print("pressionei o botão"), },
                             onPressed: () {
-                              /* Navigator.push(
+                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Anexo()),
-                              );*/
+                                    builder: (context) => DashInvestidor()),
+                              );
                             },
 
                             shape: new RoundedRectangleBorder(

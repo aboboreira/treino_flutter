@@ -316,22 +316,7 @@ class _CodigoState extends State<Codigo> {
                               startTimer();
                               alterarVisibilidade();
 
-                              //ir no avançar
-                              if(_key.currentState.validate()){
-                                _key.currentState.save();
-                                print(cod1+cod2+cod3+cod4);
-                                String codigo =cod1+cod2+cod3+cod4;
-                                print("código ${codigo}");
-                                if(codigo != "1234"){
-                                  print("Token inválido");
-                                  _isVisible3 = !_isVisible3;
-                                }else if(codigo == "1234"){
-                                  _isVisible3 = false;
-                                  print("Ok");
-                                }
-                              }else{
-                                null;
-                              }
+
                             },
 
                             shape: new RoundedRectangleBorder(
@@ -401,6 +386,27 @@ class _CodigoState extends State<Codigo> {
                           child: RaisedButton(
                             //onPressed: () => { print("pressionei o botão"), },
                                 onPressed: () {
+                                  //ir no avançar
+                                  if(_key.currentState.validate()){
+                                    _key.currentState.save();
+                                    print(cod1+cod2+cod3+cod4);
+                                    String codigo =cod1+cod2+cod3+cod4;
+                                    print("código ${codigo}");
+                                    if(codigo != "1234"){
+                                      print("Token inválido");
+                                      _isVisible3 = !_isVisible3;
+                                    }else if(codigo == "1234"){
+                                      _isVisible3 = false;
+                                      print("Ok");
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => AnexoDoc()),
+                                      );
+                                    }
+                                  }else{
+                                    null;
+                                  }
                              /* Navigator.push(
                                 context,
                                 MaterialPageRoute(
